@@ -20,6 +20,33 @@ function convertirAFahrenheit(celsius){
     return (celsius / 5) * 9 + 32
 }
 
-for ()
+for (i = 1; i <=  5; i++){
+    let temp = parseFloat(prompt("Dame la temperatura en celcius para coonvertira fahrenheit: "))
+    
+if (isNaN(temp)){
+    console.log("Error de parametro ingresa un numero valido")
+} else {
+    let resultadoFah = convertirAFahrenheit(temp);
+    console.log(temp + "°C son " + resultadoFah + "°F");
+}
+}
 
+/*-----------------------------------------------*/
 
+function contarVocales(texto) {
+    let contador = 0;
+    let minusculas = texto.toLowerCase()
+    
+    for (let i = 0; i < minusculas.length; i++) {
+        let letra = minusculas[i]
+         if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
+            contador++;
+         }
+        }
+        return contador;
+    }
+    for (let i = 1; i <= 3;i++ ){
+        let texto =prompt(`Texto ${i}: Ingresa un texto para contar sus vocales:`);
+
+        if (texto === null || texto)
+    }
